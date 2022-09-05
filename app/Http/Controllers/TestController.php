@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -7,6 +8,7 @@ class TestController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $message = "Hello world";
+        return view('index',compact('message'));
     }
 }
