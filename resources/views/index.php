@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<?php echo $message; ?>
+<?php echo $param; ?>
 </body>
 
 </html>

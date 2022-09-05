@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
-    public function index()
+    public function index($param)
     {
-        $message = "Hello world";
-        return view('index',compact('message'));
+        $item = ['param' => $param];
+        return view('index',$item);
     }
 }
